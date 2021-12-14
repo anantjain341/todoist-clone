@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+    color: #202020;
+}
+
+.header{
+   width: 100%;
+   height: 45px;
+   background-color: #db4c3f;
+   border-bottom: solid 1px #ca2100;
+   box-shadow: 0px 1px 2px rgba(0,0,0,0.15);
+}
+.header nav{
+    max-width: 900px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.content{
+    max-width: 900px;
+    /* height: 100vh; */
+    margin: auto;
+    display: flex;
+}
+.sidebar{
+    user-select: none;
+    width: 250px;
+    height: 100vh;
+    border-right: solid 1px #f1f1f1;
+    padding-top: 60px;
+    /* background-color: #fafafa; */
+}
+.sidebar div {
+    margin-bottom: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.sidebar div .icon {
+    margin-right: 10px;
+}
+.sidebar .active {
+    background-color: white;
+}
+.task{
+    width: 650px;
+    height: 100vh;
+    background-color: white;
+    padding: 60px 25px ;
+}
+.task .heading{
+    margin-bottom: 10px;
+}
+.task .add-task-btn{
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+}
+.task .add-task-btn .plus{
+    color: #dd4b39;
+    font-size: 20px;
+}
+.task .add-task-btn .add-task-text{
+    color: #545454;
+    font-size: 15px;
+    margin-left: 15px;
+}
+.task .add-task-dialog input{
+    width: 100%;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+.task .add-task-dialog .add-task-actions-container{
+        margin: 10px 0;
+        display: flex;
+        justify-content: space-between;
+}
+.task .add-task-dialog .add-task-actions-container .add-btn{
+    padding: 6px 12px;
+    margin-right: 5px;
+    color: white;
+    background-color: #dd4b39;
+    border: 1px solid transparent;
+    border-radius: 3px ;
+    font-weight: bold;
+    cursor: pointer;
+}
+.task .add-task-dialog .add-task-actions-container .add-btn:disabled{
+    background-color: #545454;
+}
+.add-btn:active{
+    transform: scale(0.9);
+}
+.task .add-task-dialog .add-task-actions-container .cancel-btn{
+    all: unset;
+    padding: 6px;
+    margin-right: 5px;
+    color: #545454;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cancel-btn:active{
+    transform: scale(0.9);
+}
+.task-items-container{
+    margin-top: 30px;
+    padding: 0 3px;
+}
+.task-items-container .task-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+/* .task-items-container .task-item :not(:last-child){
+    border-bottom: solid 1px #dd4b39;
+} */
